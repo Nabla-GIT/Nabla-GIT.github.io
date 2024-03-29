@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+
+        <title>Welcome to Nabla's 3D Page</title>
+
+
+
+    <link rel="stylesheet" type="text/css" href="styles.css?v=1.0.14">
+
+
+
+
+        <script src="my3dengine.js"></script>
+
+</head>
+<body>
+
+
+
+<nav>
+
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="contact.html">Contact</a>
+    <a href="MyCube.html">My 3D Cube</a>
+
+</nav>
+
+<section>
+
+    <div class="container">
+    <div class="text">
+
+    <h2>About Me</h2>
+    </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+        
+
+    <div class="image">
+        <img src="aboutme/me.jpg" alt="My Photo">
+    </div>
+
+    <div class="text">
+                <p>我目前在浙江大学，从事计算机图形学及其与互联网的交叉研究，包含web3D渲染、3D几何处理、digital twin等方向。
+        曾设计N-Alien机器人，对机器人上位软件架构、机器人集成电路、机器人运动控制算法、机器人力学结构设计均有较深研究。
+        科研期间接触数学梯度算符Nabla，觉得很美，故以此为英文名。
+        </p>
+                    <p><b>转动导航魔方，查看科研详情：</b>
+        </p>
+    </div>
+
+             <canvas id="renderCanvas" ></canvas>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+    <div class="text">
+
+
+     <h2>My Research</h2>
+
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<div class="container-wrapper">
+
+
+    <div class="container1">
+
+        <div class="image1">
+        <img id="GISys" src="GISys/GISys.png"  alt="Nabla's GISys">
+
+    </div>
+
+    <div class="text1">
+                <p> <b> WebGI-全局照明渲染系统：</b>web因其可扩展性和跨平台特性，在渲染行业具有巨大潜力，我们提出了新方法在web上渲染出带有全局照明效果的3D场景，同时把它部署到web系统上。
+        </p>
+
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container1">
+
+        <div class="image1">
+        <img id="uvuw" src="UVUnwrapping/uvuw.png"  alt="Nabla's uvuwSys">
+
+    </div>
+
+    <div class="text1">
+                <p> <b> Web UV参数化系统：</b>uv参数化是判断3D模型完整度的标志，在三维重建和渲染中起关键作用，我们考虑web特性，设计了WUVP系统及支持它运行的大型稀疏方程求解器。
+        </p>
+
+
+    </div>
+
+
+
+    </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+<div class="container-wrapper">
+
+
+
+    <div class="container1">
+
+
+
+
+
+        <div class="image1">
+        <img id="NAlien" src="NAlien/NAlien.jpg"  alt="Nabla's Alien">
+
+    </div>
+    <div class="text1">
+                <p> <b> N-Alien机器人：</b>我从AI视觉系统、上位软件架构、运动控制算法、集成电路系统、机器人3D架构入手，创造了它，它具有远程GPS定位、AI视觉探测以及良好的运动能力。
+        </p>
+
+
+    </div>
+
+    </div>
+
+
+
+
+    </div>
+
+
+
+    <div class="container">
+    <div class="text">
+        
+     <h2>My Awards</h2>
+
+
+    </div>
+    </div>
+
+        <div class="container">
+
+    <div class="text">
+
+
+
+        <h3>1 National Scholarship </h3>
+           <p>Certification ID：BZK202054374 </p>
+
+        <h3>2 Invention Patent </h3>
+           <p>Publication number：CN116630574A, "一种流形曲面模型有序边缘链快速求解方法",赵晓阳.etc </p>
+
+        <h3>3 Utility Model Patent </h3>
+           <p>Publication number：CN218317008U, "一种模块化四足机器人腿部结构",赵晓阳.etc</p>
+
+
+
+    </div>
+
+
+    </div>
+
+
+
+
+
+
+</section>
+
+<footer>
+    <p>&copy; 2024 Nabla's Website. All rights reserved.</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script>
+        const canvas = document.getElementById("renderCanvas"); // Get the canvas element
+
+
+        canvas.addEventListener('wheel', function(e) {e.preventDefault();});
+        //canvas.style.outline = 'none';
+/*
+        var windowWidth = window.innerWidth;
+
+        canvas.width = windowWidth;
+        canvas.height = 600;
+
+        window.addEventListener('resize', function() {
+            var newWindowWidth = window.innerWidth;
+            canvas.width = newWindowWidth;
+        });
+
+*/
+
+
+
+
+
+        const engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
+
+
+
+        const createScene = function () {
+            // This creates a basic Babylon Scene object (non-mesh)
+            const scene = new BABYLON.Scene(engine);
+            scene.clearColor=new BABYLON.Color4(0,0,0,0);
+
+
+
+
+
+
+
+
+
+    var camera = new BABYLON.ArcRotateCamera("camera1", 0, 0, 10, BABYLON.Vector3(0,0,0), scene);
+    camera.attachControl(canvas, true);
+    camera.position=new BABYLON.Vector3(3.2,-1.2,3.2);
+    camera.wheelPrecision=100;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+
+
+
+
+
+var pointlight1=new BABYLON.PointLight('p1',new BABYLON.Vector3(0,0,2),scene)
+
+var hemilight = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, -1, 0), scene);
+
+
+
+var texture1 = new BABYLON.Texture("NAlien/NAlien.jpg", scene);
+var texture2 = new BABYLON.Texture("GISys/GISys.png", scene);
+var texture3 = new BABYLON.Texture("UVUnwrapping/uvuw.png", scene);
+
+var materialimgs=[texture1,texture2,texture3];
+
+/*
+var texture2 = new BABYLON.Texture("GISys/GISys.png", scene);
+var texture3 = new BABYLON.Texture("GISys/GISys.png", scene);
+var texture4 = new BABYLON.Texture("GISys/GISys.png", scene);
+var texture5 = new BABYLON.Texture("GISys/GISys.png", scene);
+var texture6 = new BABYLON.Texture("GISys/GISys.png", scene);
+
+var materialimgs=[texture1,texture2,texture3,texture4,texture5,texure6];
+
+*/
+
+
+
+    // URL array
+    var urls = [
+        "NAlien.html",
+        "GISys.html",
+        "uvuw.html",
+        "https://www.facebook.com/",
+        "https://www.twitter.com/",
+        "https://www.instagram.com/"
+    ];
+
+    // Function to create plane with material and action
+    function createPlaneWithAction(name, position, rotation,url,materialimg) {
+        var plane = BABYLON.MeshBuilder.CreatePlane(name, { size: 2 }, scene);
+        plane.position = position;
+        plane.rotation = rotation; // Rotate to face the camera
+
+        // Apply material with texture as URL
+        var material = new BABYLON.StandardMaterial("material" + name, scene);
+        //material.diffuseColor=new BABYLON.Color3(0.07, 0.62, 0.76, 0.62)
+        material.diffuseTexture=materialimg;
+        material.backFaceCulling=false;
+        plane.material = material;
+
+
+        // Add action to open URL on click
+        plane.actionManager = new BABYLON.ActionManager(scene);
+        plane.actionManager.registerAction(
+            new BABYLON.ExecuteCodeAction(
+                BABYLON.ActionManager.OnPickTrigger,
+                function (evt) {
+                        window.location.href = url;
+
+                }
+            )
+        );
+
+        return plane;
+    }
+
+
+    var positions = [
+        new BABYLON.Vector3(-1, 0,0), // Front
+        new BABYLON.Vector3(1, 0, 0), // Front
+        new BABYLON.Vector3(0, 0, 1), // Front
+        new BABYLON.Vector3(0, 0, -1), // Front
+        new BABYLON.Vector3(0, 1, 0), // Front
+        new BABYLON.Vector3(0, -1, 0) // Bottom
+    ];
+
+    var rotations = [
+        new BABYLON.Vector3(0, Math.PI/2, 0), // Front
+        new BABYLON.Vector3(0, Math.PI/2, 0), // Front
+        new BABYLON.Vector3(0, 0, 0), // Front
+        new BABYLON.Vector3(0, 0, 0), // Front
+        new BABYLON.Vector3( Math.PI/2, 0, 0), // Front
+        new BABYLON.Vector3( Math.PI/2, 0, 0) // Bottom
+    ];
+
+    // Create planes and assign URLs for the box
+    var boxPlanes = [];
+
+
+    for (var i = 0; i < 6; i++) {
+        var plane = createPlaneWithAction("plane" + i, positions[i], rotations[i], urls[i],materialimgs[i]);
+        boxPlanes.push(plane);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var time=0;
+
+
+
+
+
+
+
+
+scene.registerBeforeRender(automove);
+
+canvas.addEventListener("pointerdown", onMouseDown);
+canvas.addEventListener("pointerup", onMouseUp);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function automove () {
+
+
+
+
+
+
+
+time+=scene.getEngine().getDeltaTime()/10000;
+
+
+
+    var radius=0.1;
+    var speed=12;
+
+
+    var x = Math.sin(time*speed ) * radius;
+    var y= Math.cos(time*speed ) * radius;
+    var z = Math.cos(time*speed) * radius;
+
+
+hemilight.intensity=Math.abs( Math.sin(time ))*3 ;
+hemilight.direction=new BABYLON.Vector3(x,1,z);
+pointlight1.intensity=Math.abs( Math.cos(time*3 ))*1 ;
+
+
+for (let i = 0; i < boxPlanes.length; i++) {
+    boxPlanes[i].position = new BABYLON.Vector3(x+positions[i].x, y+positions[i].y, z+positions[i].z);
+}
+
+}
+
+
+function onMouseDown(event) {
+scene.unregisterBeforeRender(automove);
+
+
+}
+
+function onMouseUp(event) {
+scene.registerBeforeRender(automove);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            return scene;
+        };
+
+
+
+
+
+        const scene = createScene(); //Call the createScene function
+        // Register a render loop to repeatedly render the scene
+        engine.runRenderLoop(function () {
+                scene.render();
+        });
+        // Watch for browser/canvas resize events
+        window.addEventListener("resize", function () {
+                engine.resize();
+        });
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
