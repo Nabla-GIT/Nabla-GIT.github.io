@@ -266,14 +266,14 @@ height: 100%;}
 canvas{ 
     outline: none;
     width: 60%;
-    height:50%;
+    height:100%;
     background-color: transparent;
-    z-index:50; 
+    z-index:10000; 
 
 
     position: absolute; /* 将 canvas 绝对定位 */
-    top: 5vw; /* 距离容器顶部的距离 */
-    right: 15vw; /* 距离容器顶部的距离 */
+    top: 8vw; /* 距离容器顶部的距离 */
+    right: 5vw; /* 距离容器顶部的距离 */
 
     
 };
