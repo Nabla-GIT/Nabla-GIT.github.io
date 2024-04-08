@@ -291,8 +291,9 @@
 
     var camera = new BABYLON.ArcRotateCamera("camera1", 0, 0, 10, BABYLON.Vector3(0,0,0), scene);
     camera.attachControl(canvas, true);
-    camera.position=new BABYLON.Vector3(3.2,-1.2,3.2);
+    camera.position=new BABYLON.Vector3(3.2,-1.2,5.6);
     camera.wheelPrecision=100;
+    camera.lowerRadiusLimit = 2; // 设置最小距离
 
 
 
