@@ -286,7 +286,7 @@ canvas{
 
 
     position: absolute; /* 将 canvas 绝对定位 */
-    top: 8vw; /* 距离容器顶部的距离 */
+    top: 0vw; /* 距离容器顶部的距离 */
     right: 5vw; /* 距离容器顶部的距离 */
 
     
