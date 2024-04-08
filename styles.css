@@ -151,7 +151,7 @@ footer{
 .container0 {
     display: flex;
     /* align-items: center; 垂直居中对齐 */
-    width: 100%;
+    width: 50%;
 
     margin-top:5%;
     font-size: 100%;
@@ -167,7 +167,7 @@ footer{
 .container {
     display: flex;
     /* align-items: center; 垂直居中对齐 */
-    width: 50%;
+    width: 100%;
 
     margin-top:5%;
     font-size: 100%;
@@ -280,14 +280,14 @@ height: 100%;}
 canvas{ 
     outline: none;
     width: 60%;
-    height:100%;
+    height:80%;
     background-color: transparent;
     z-index:10000; 
 
 
     position: absolute; /* 将 canvas 绝对定位 */
     top: 0vw; /* 距离容器顶部的距离 */
-    right: 5vw; /* 距离容器顶部的距离 */
+    right: 3vw; /* 距离容器顶部的距离 */
 
     
 };
