@@ -266,6 +266,8 @@ canvas{
     width: 50%;
     height:150%;
     background-color: transparent;
+    z-index:50; 
+
 
 
 
