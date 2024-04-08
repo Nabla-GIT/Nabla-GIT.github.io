@@ -280,7 +280,7 @@ height: 100%;}
 canvas{ 
     outline: none;
     width: 65%;
-    height:95%;
+    height:100%;
     background-color: transparent;
     z-index:10000; 
 
