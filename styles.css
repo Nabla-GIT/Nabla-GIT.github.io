@@ -148,6 +148,22 @@ footer{
 
 
 
+.container0 {
+    display: flex;
+    /* align-items: center; 垂直居中对齐 */
+    width: 100%;
+
+    margin-top:5%;
+    font-size: 100%;
+    color:	#00BFFF;
+ overflow: hidden;
+ border: none;
+
+}
+
+
+
+
 .container {
     display: flex;
     /* align-items: center; 垂直居中对齐 */
@@ -183,8 +199,6 @@ height: auto;
 
 .image :hover{transition: filter 0.8s ease, transform 0.8s ease;
  overflow: hidden; transform: scale(1.1) ;  filter: brightness(0.5); /* 降低亮度为70% */}
-
-
 
 
 .text {
