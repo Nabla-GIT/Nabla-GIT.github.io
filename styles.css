@@ -18,7 +18,8 @@ body {
   line-height: 1.2;
   font-size: 1.4vw; /* 所有字体大小跟着这儿成比例放大*/
 background-color:black;
-    
+background-attachment: fixed; /* 将背景图像与页面一起滚动 */
+
 
 }
 
