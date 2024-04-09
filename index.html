@@ -262,7 +262,7 @@
         var ctx = canvas.getContext('2d');
         
         // 手动设置 Canvas 背景为透明
-        ctx.fillStyle = 'rgba(0, 0, 0, 0)'; // 透明黑色
+        ctx.fillStyle = 'rgba(0, 0, 0, 1)'; // 透明黑色
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         
         // 在这里绘制你的图形、图像等
@@ -327,6 +327,19 @@
 
 
 
+// 监听鼠标移动事件
+canvas.addEventListener("mousemove", function(event) {
+    // 获取鼠标位置
+    var pickInfo = scene.pick(scene.pointerX, scene.pointerY);
+    
+    if (pickInfo.hit && pickInfo.pickedMesh) {
+        // 如果鼠标碰到了模型，则启用相机控制
+        camera.attachControl(canvas, true);
+    } else {
+        // 如果鼠标不在模型上，则禁用相机控制
+        camera.detachControl(canvas);
+    }
+});
 
 
 
