@@ -259,7 +259,7 @@ height: auto;
 
     margin-left: 2%;
     margin-right: 2%;
-    background-color: #00BFFF;
+  background-color: rgba(0, 0.75, 1, 0.5); /* 将背景颜色设置为半透明黑色，alpha 值为 0.5 */
     color: black;
     border-radius: 2.2vw;
     border-color: black;
