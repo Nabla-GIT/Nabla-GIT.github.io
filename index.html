@@ -253,7 +253,7 @@
         const canvas = document.getElementById("renderCanvas"); // Get the canvas element
 
 
-        canvas.addEventListener('wheel', function(e) {e.preventDefault();});
+       // canvas.addEventListener('wheel', function(e) {e.preventDefault();});
 
     // 在页面加载完成后执行
     window.onload = function() {
@@ -325,7 +325,7 @@
 
 
 
-
+var isPointerOverMesh = false;
 
 // 监听鼠标移动事件
 canvas.addEventListener("mousemove", function(event) {
@@ -334,10 +334,20 @@ canvas.addEventListener("mousemove", function(event) {
     
     if (pickInfo.hit && pickInfo.pickedMesh) {
         // 如果鼠标碰到了模型，则启用相机控制
-        camera.attachControl(canvas, true);
+        scene.activeCamera.attachControl(canvas, true);
+        isPointerOverMesh = true;
     } else {
         // 如果鼠标不在模型上，则禁用相机控制
-        camera.detachControl(canvas);
+        scene.activeCamera.detachControl(canvas);
+        isPointerOverMesh = false;
+    }
+});
+
+// 监听滚轮事件
+canvas.addEventListener("wheel", function(event) {
+    if (!isPointerOverMesh) {
+        // 如果鼠标不在模型上，则滚动页面
+        window.scrollBy(0, event.deltaY);
     }
 });
 
