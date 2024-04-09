@@ -24,6 +24,9 @@ body {
         background-size: cover; /* 图片将会被缩放以填满整个容器 */
         background-repeat: no-repeat; /* 图片不重复 */
         background-position: center center; /* 图片位于容器的中心 */
+        filter: brightness(0.7); /* 降低亮度，取值范围为 0（最暗
+
+
 
 }
 
