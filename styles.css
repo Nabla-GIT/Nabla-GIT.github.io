@@ -24,8 +24,7 @@ background-color:black;
          background-position: center center; /* 图片位于容器的中心 */
         background-attachment: fixed; /* 将背景图像与页面一起滚动 */
 
-      background-blend-mode: multiply; /* 使用混合模式 */
-  opacity: 0.5; /* 控制背景图的透明度 */
+
 
 
 
