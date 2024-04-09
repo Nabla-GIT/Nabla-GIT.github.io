@@ -35,7 +35,6 @@ background-color:black;
 body {
   line-height: 1.2;
   font-size: 1.4vw;
-  position: relative; /* 让 ::before 或 ::after 伪元素相对于 body 定位 */
 }
 
 body::before {
