@@ -348,7 +348,13 @@ canvas.addEventListener("wheel", function(event) {
     if (!isPointerOverMesh) {
         // 如果鼠标不在模型上，则滚动页面
         window.scrollBy(0, event.deltaY);
-    }
+    } else{event.preventDefault();}
+
+	        
+
+
+
+	
 });
 
 
