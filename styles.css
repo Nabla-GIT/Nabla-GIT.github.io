@@ -56,7 +56,7 @@ font-size: 100%;
 
 position: fixed;
 background-color: black;
-  z-index: 800; /* 确保导航栏位于其他内容上方 */
+  z-index: 100000; /* 确保导航栏位于其他内容上方 */
 
   top:0; /* 距离顶部距离为0 */
   width: 100%; /* 宽度占满整个屏幕 */
@@ -118,7 +118,7 @@ section{
 
 margin-left: 10%;
 margin-right: 10%;
-margin-top: 8%;
+margin-top: 10%;
 
 font-size: 100%; 
     color:	#00BFFF;
