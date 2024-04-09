@@ -50,6 +50,8 @@ body::before {
   background-attachment: fixed;
   filter: brightness(0.5); /* 0.5 表示将亮度降低到原来的一半，可以根据需要进行调整 */
   z-index: -1; /* 确保伪元素在内容之后绘制 */
+  line-height: 1.2;
+  font-size: 1.4vw;
 }
 
     
