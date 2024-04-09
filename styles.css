@@ -19,12 +19,8 @@ body {
 
   line-height: 1.2;
   font-size: 1.4vw; /* 所有字体大小跟着这儿成比例放大*/
-    
- background-image: url('background/stars.png'); /* 替换 'your-image-url.jpg' 为你的图片地址 */
-        background-size: cover; /* 图片将会被缩放以填满整个容器 */
-        background-repeat: no-repeat; /* 图片不重复 */
-        background-position: center center; /* 图片位于容器的中心 */
-        filter: brightness(0.2); /* 降低亮度，取值范围为 0（最暗
+  background-color: black;
+
 
 
 
