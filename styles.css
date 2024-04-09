@@ -11,7 +11,11 @@
 
 }
 
-
+html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%; /* 设置html和body元素的高度为100% */
+    }
 
 /* 页面共同部分*/
 body {
