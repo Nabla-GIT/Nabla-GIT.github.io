@@ -14,6 +14,7 @@
 
 
 /* 页面共同部分*/
+/*
 body {
   line-height: 1.2;
   font-size: 1.4vw; /* 所有字体大小跟着这儿成比例放大*/
@@ -25,6 +26,31 @@ background-color:black;
   filter: brightness(0.5); /* 0.5 表示将亮度降低到原来的一半，可以根据需要进行调整 */
 
 
+}
+*/
+
+
+
+
+body {
+  line-height: 1.2;
+  font-size: 1.4vw;
+  position: relative; /* 让 ::before 或 ::after 伪元素相对于 body 定位 */
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('background/stars.png');
+  background-size: 100% 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  filter: brightness(0.5); /* 0.5 表示将亮度降低到原来的一半，可以根据需要进行调整 */
+  z-index: -1; /* 确保伪元素在内容之后绘制 */
 }
 
     
