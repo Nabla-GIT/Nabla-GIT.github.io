@@ -27,7 +27,7 @@ body::before {
         bottom: 0;
         left: 0;
         background-image: url('background/stars.png'); /* 替换 'your-image-url.jpg' 为你的图片地址 */
-        background-size: 100% 100%; /* 图片将会拉伸以填满整个容器，可能会导致变形 */
+        background-size: 100% 200%; /* 图片将会拉伸以填满整个容器，可能会导致变形 */
         background-position: center center; /* 图片位于容器的中心 */
 
         filter: brightness(0.2); /* 降低亮度，取值范围为 0（最暗）到 1（原始亮度） */
