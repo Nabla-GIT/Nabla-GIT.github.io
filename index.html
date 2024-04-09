@@ -343,6 +343,8 @@ canvas.addEventListener("mousemove", function(event) {
     }
 });
 
+
+		
 // 监听滚轮事件
 canvas.addEventListener("wheel", function(event) {
     if (!isPointerOverMesh) {
@@ -350,13 +352,63 @@ canvas.addEventListener("wheel", function(event) {
         window.scrollBy(0, event.deltaY);
     } else{event.preventDefault();}
 
-	        
-
-
-
-	
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 获取 container-wrapper 元素
+var containerWrapper = document.querySelector(".container-wrapper");
+
+// 获取 container1 元素
+var container1 = document.querySelector(".container1");
+
+// 获取 image1 元素
+var image1 = document.querySelector(".image1");
+
+// 监听鼠标移动事件
+canvas.addEventListener("mousemove", function(event) {
+    // 获取鼠标位置
+    var pickInfo = scene.pick(scene.pointerX, scene.pointerY);
+    
+    if (!pickInfo.hit || !pickInfo.pickedMesh) {
+        // 如果鼠标不在模型上，则将事件传递到 containerWrapper、container1 和 image1
+        containerWrapper.dispatchEvent(new MouseEvent('mousemove', event));
+        container1.dispatchEvent(new MouseEvent('mousemove', event));
+        image1.dispatchEvent(new MouseEvent('mousemove', event));
+    }
+});
+
+// 监听鼠标点击事件
+canvas.addEventListener("mousedown", function(event) {
+    // 获取鼠标位置
+    var pickInfo = scene.pick(scene.pointerX, scene.pointerY);
+    
+    if (!pickInfo.hit || !pickInfo.pickedMesh) {
+        // 如果鼠标不在模型上，则将事件传递到 containerWrapper、container1 和 image1
+        containerWrapper.dispatchEvent(new MouseEvent('mousedown', event));
+        container1.dispatchEvent(new MouseEvent('mousedown', event));
+        image1.dispatchEvent(new MouseEvent('mousedown', event));
+    }
+});
 
 
 
