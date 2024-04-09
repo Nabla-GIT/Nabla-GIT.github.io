@@ -18,7 +18,6 @@ body {
   line-height: 1.2;
   font-size: 1.4vw; /* 所有字体大小跟着这儿成比例放大*/
     
-        background-color: black;
 
 }
 
@@ -33,6 +32,8 @@ body {
         background-size: 100% 100%; /* 图片将会拉伸以填满整个容器，可能会导致变形 */
          background-position: center center; /* 图片位于容器的中心 */
         background-attachment: fixed; /* 将背景图像与页面一起滚动 */
+                background-color: black;
+
         
         filter: brightness(0.6); /* 降低亮度，取值范围为 0（最暗）到 1（原始亮度） */
         z-index: -1; /* 将伪元素置于底部 */
