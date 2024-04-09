@@ -255,6 +255,20 @@
 
         canvas.addEventListener('wheel', function(e) {e.preventDefault();});
 
+    // 在页面加载完成后执行
+    window.onload = function() {
+        // 获取 Canvas 元素
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+        
+        // 手动设置 Canvas 背景为透明
+        ctx.fillStyle = 'rgba(0, 0, 0, 0)'; // 透明黑色
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        // 在这里绘制你的图形、图像等
+    };
+		
+
   var width = canvas.offsetWidth;
   var height = width * 0.78; // 高度为宽度的两倍
   canvas.width = width;
