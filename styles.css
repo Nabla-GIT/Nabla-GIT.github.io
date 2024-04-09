@@ -30,7 +30,7 @@ body::before {
         background-size: 100% 200%; /* 图片将会拉伸以填满整个容器，可能会导致变形 */
         background-position: center center; /* 图片位于容器的中心 */
 
-        filter: brightness(0.2); /* 降低亮度，取值范围为 0（最暗）到 1（原始亮度） */
+        filter: brightness(0.5); /* 降低亮度，取值范围为 0（最暗）到 1（原始亮度） */
         z-index: -1; /* 将伪元素置于底部 */
     }
 
