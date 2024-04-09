@@ -14,7 +14,7 @@
 
 
 /* 页面共同部分*/
-/*
+
 body {
   line-height: 1.2;
   font-size: 1.4vw; /* 所有字体大小跟着这儿成比例放大*/
@@ -27,11 +27,11 @@ background-color:black;
 
 
 }
-*/
 
 
 
 
+/*
 body {
   line-height: 1.2;
   font-size: 1.4vw;
@@ -53,7 +53,7 @@ body::before {
   line-height: 1.2;
   font-size: 1.4vw;
 }
-
+*/
     
 
 
