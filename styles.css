@@ -20,7 +20,7 @@ body {
   font-size: 1.4vw; /* 所有字体大小跟着这儿成比例放大*/
 background-color:black;
         background-image: url('background/stars.png'); /* 替换 'your-image-url.jpg' 为你的图片地址 */
-        background-size: 100% 100%; /* 图片将会拉伸以填满整个容器，可能会导致变形 */
+        background-size: 100% cover; /* 图片将会拉伸以填满整个容器，可能会导致变形 */
          background-position: center center; /* 图片位于容器的中心 */
         background-attachment: fixed; /* 将背景图像与页面一起滚动 */
 
