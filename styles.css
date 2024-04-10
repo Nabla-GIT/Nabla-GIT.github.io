@@ -19,7 +19,7 @@ body {
   line-height: 1.2;
   font-size: 1.4vw; /* 所有字体大小跟着这儿成比例放大*/
 background-color:black;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('background/stars.png'); /* 替换 'your-image-url.jpg' 为你的图片地址 */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('background/stars.png'); /* 替换 'your-image-url.jpg' 为你的图片地址 */
         background-size: 100% 100%; /* 图片将会拉伸以填满整个容器，可能会导致变形 */
          background-position: center center; /* 图片位于容器的中心 */
         background-attachment: fixed; /* 将背景图像与页面一起滚动 */
@@ -259,8 +259,8 @@ height: auto;
 
     margin-left: 2%;
     margin-right: 2%;
-  background-color: rgba(0, 0.75, 1, 0.5); /* 将背景颜色设置为半透明黑色，alpha 值为 0.5 */
-    color: black;
+    background-color: rgba(0, 0.75, 1, 0.5); /* 将背景颜色设置为半透明黑色，alpha 值为 0.5 */
+    color:	#00BFFF;
     border-radius: 2.2vw;
     border-color: black;
     box-shadow: 0px 0px 0.8vw 0.8vw rgba(0, 95, 122, 0.75);
