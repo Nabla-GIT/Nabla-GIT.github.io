@@ -221,7 +221,7 @@ footer{
 
 flex: 0 0 15%;
 max-width: 15%; /* 给空间 */
-height: auto; /* 去掉之后，图片不再缩放 */
+height: 100%; /* 去掉之后，图片不再缩放 */
  overflow: hidden;
 
 }
@@ -265,7 +265,6 @@ height: auto;
     color:	#00BFFF;
     border-radius: 2.2vw;
     border-color: black;
-    box-shadow: 0px 0px 0.8vw 0.8vw rgba(0, 95, 122, 0.75);
     overflow: hidden;
     flex-direction: column;
     justify-content: center;
