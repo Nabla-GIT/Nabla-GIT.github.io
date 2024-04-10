@@ -193,6 +193,8 @@ footer{
     color:	#00BFFF;
  overflow: hidden;
  border: none;
+ background-color: rgba(0, 0,0, 0.4); /* 将背景颜色设置为半透明黑色，alpha 值为 0.5 */
+
 
 }
 
@@ -209,6 +211,7 @@ footer{
     color:	#00BFFF;
  overflow: hidden;
  border: none;
+ background-color: rgba(0, 0,0, 0.4); /* 将背景颜色设置为半透明黑色，alpha 值为 0.5 */
 
 }
 
