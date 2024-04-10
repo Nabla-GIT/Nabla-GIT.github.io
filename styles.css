@@ -192,8 +192,8 @@ footer{
     font-size: 100%;
     color:	#00BFFF;
  overflow: hidden;
- border: none;
  background-color: rgba(0, 0,0, 0.4); /* 将背景颜色设置为半透明黑色，alpha 值为 0.5 */
+ border-radius: 2.2vw;
 
 
 }
@@ -211,7 +211,6 @@ footer{
     color:	#00BFFF;
  overflow: hidden;
  border: none;
- background-color: rgba(0, 0,0, 0.4); /* 将背景颜色设置为半透明黑色，alpha 值为 0.5 */
 
 }
 
