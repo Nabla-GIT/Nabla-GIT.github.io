@@ -24,10 +24,6 @@ background-color:black;
          background-position: center center; /* 图片位于容器的中心 */
         background-attachment: fixed; /* 将背景图像与页面一起滚动 */
 
-
-
-
-
 }
 
 
@@ -181,6 +177,7 @@ footer{
 
     }
 
+.container-wrapper :hover {    box-shadow: 0px 0px 1.2vw 1.2vw rgba(10, 191, 255, 0.75);}
 
 
 .container0 {
