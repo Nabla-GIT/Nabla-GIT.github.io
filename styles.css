@@ -223,7 +223,7 @@ flex: 0 0 15%;
 max-width: 15%; /* 给空间 */
 height: 100%; /* 去掉之后，图片不再缩放 */
  overflow: hidden;
-
+transition: all 0.5s ease;
 }
 
 
@@ -231,10 +231,11 @@ height: 100%; /* 去掉之后，图片不再缩放 */
  overflow: hidden;
 max-width: 100%; /* 设置具体图片的大小*/
 height: auto;
+transition: all 0.5s ease;
 
 }
 
-.image :hover{transition: filter 0.8s ease, transform 0.8s ease;
+.image :hover{transition: all 0.5s ease;
  overflow: hidden; transform: scale(1.1) ;  filter: brightness(0.5); /* 降低亮度为70% */}
 
 
@@ -296,11 +297,6 @@ height: 100%;}
  overflow: hidden; transform: scale(1.1) ;  filter: brightness(0.5); /* 降低亮度为70% */}
 
 
-.image1:not(:hover) {
-    transition: transform 0.8s ease;
-    transform: scale(1.0);
-    overflow: hidden; 
-}
 
 
 
