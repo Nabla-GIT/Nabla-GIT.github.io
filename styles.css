@@ -52,8 +52,8 @@ background-color: black;
 
 
 
-nav {display: flex;     background-color: rgba(0, 0, 0, 0.4); /* 设置背景颜色为半透明黑色 */    padding: 10px; /* 为导航栏添加内边距 */}
-nav a{ align-items: center; /* 在交叉轴上居中对齐 */,   color:	#00BFFF; }
+nav {display: flex;  align-items: center;   background-color: rgba(0, 0, 0, 0.4); /* 设置背景颜色为半透明黑色 */    padding: 10px; /* 为导航栏添加内边距 */}
+nav a{ align-items: center;  color:	#00BFFF; }
 
 .logo { margin-right: auto; /* 将 logo 推到导航栏的最左边 */}
 .logo img {height: 3vw; /* 设置 logo 图片的高度 */}
