@@ -86,13 +86,14 @@ nav {
 }
 
 .logo img {
-  height: 2vw; /* 设置 logo 图片的高度 */
+  height: 3vw; /* 设置 logo 图片的高度 */
   /* 可根据需要添加其他样式 */
 }
 
 ul {
   list-style-type: none; /* 去除默认的列表样式 */
   display: flex;
+  align-items: center; /* 垂直居中 */
   justify-content: center; /* 水平居中 */
   /* 可根据需要添加其他样式 */
 }
@@ -105,7 +106,7 @@ ul li {
 ul li a {
   text-decoration: none; /* 去除链接的下划线 */
   color: white; /* 设置链接文字颜色为白色 */
-  font-size: 2vw; /* 设置链接字体大小为视口宽度的2% */
+  font-size: 3vw; /* 设置链接字体大小为视口宽度的2% */
   /* 可根据需要添加其他样式 */
 }
 
