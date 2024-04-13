@@ -71,70 +71,34 @@ background-color: black;
 }
 
 
-/* 页面nav部分*/
+
 nav {
-text-align: center;
-text-decoration-line: none;
-    color:	#00BFFF;
-
-
-
-font-size: 100%;
-
-position: fixed;
-  background-color: rgba(0, 0, 0, 0.4); /* 将背景颜色设置为半透明黑色，alpha 值为 0.5 */
-  z-index: 100000; /* 确保导航栏位于其他内容上方 */
-
-  top:0; /* 距离顶部距离为0 */
-  width: 100%; /* 宽度占满整个屏幕 */
-  height: 6%;
-
-  align-items: center;
+  display: flex;
+  align-items: center; /* 垂直居中 */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-nav a {
-  align-items: center;
-    color:	#00BFFF;
-
-  text-decoration: none; 
-  text-decoration-line: none;
-
-  margin-top: 20%;
-
-  margin-right: 2%;
-  margin-left: 2%;
-
-  font-size: 120%;
-
-
-}
-
-nav a:hover {
-  color: white; 
-
-}
-
 
 .logo {
   margin-right: auto; /* 将 logo 推到导航栏的最左边 */
 }
 
 .logo img {
-  height: 100%; /* 设置 logo 图片的高度 */
+  height: 50px; /* 设置 logo 图片的高度 */
+  /* 可根据需要添加其他样式 */
+}
+
+ul {
+  list-style-type: none; /* 去除默认的列表样式 */
+  display: flex;
+  /* 可根据需要添加其他样式 */
+}
+
+ul li {
+  margin: 0 10px; /* 调整链接之间的间距 */
+  /* 可根据需要添加其他样式 */
+}
+
+ul li a {
+  text-decoration: none; /* 去除链接的下划线 */
   /* 可根据需要添加其他样式 */
 }
 
