@@ -72,9 +72,13 @@ background-color: black;
 
 
 
+
+
 nav {
   display: flex;
   align-items: center; /* 垂直居中 */
+  background-color: rgba(0, 0, 0, 0.4); /* 设置背景颜色为半透明黑色 */
+  padding: 10px; /* 为导航栏添加内边距 */
 }
 
 .logo {
@@ -82,28 +86,27 @@ nav {
 }
 
 .logo img {
-  height: 5vw; /* 设置 logo 图片的高度 */
+  height: 50px; /* 设置 logo 图片的高度 */
   /* 可根据需要添加其他样式 */
 }
 
 ul {
   list-style-type: none; /* 去除默认的列表样式 */
   display: flex;
+  justify-content: center; /* 水平居中 */
   /* 可根据需要添加其他样式 */
 }
 
 ul li {
-  margin: 0 10px; /* 调整链接之间的间距 */
+  margin: 0 20px; /* 调整链接之间的间距 */
   /* 可根据需要添加其他样式 */
 }
 
 ul li a {
   text-decoration: none; /* 去除链接的下划线 */
+  color: white; /* 设置链接文字颜色为白色 */
   /* 可根据需要添加其他样式 */
 }
-
-
-
 
 
 
