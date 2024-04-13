@@ -1,6 +1,10 @@
 /* 默认值 */
 /* margin给top*/
 /* P h决定不了颜色*/
+/* 容器：尺寸、排列、颜色*/
+/* 相片：尺寸、排列、颜色*/
+/* 文字：尺寸、排列、颜色*/
+
 
 * {
     margin: 0;
@@ -52,7 +56,9 @@ background-color: black;
 
 
 
-nav {display: flex;   justify-content: center;  color:	#00BFFF;   background-color: rgba(0, 0, 0, 0.4); /* 设置背景颜色为半透明黑色 */    padding: 0.5vw; /* 为导航栏添加内边距 */}
+nav {display: flex;  padding: 0.5vw; margin:auto;      justify-content: center;    background-color: rgba(0, 0, 0, 0.4);      }
+nav a{color:	#00BFFF; }
+
 
 .logo { margin-right: auto; /* 将 logo 推到导航栏的最左边 */}
 .logo img {height: 3vw; /* 设置 logo 图片的高度 */}
