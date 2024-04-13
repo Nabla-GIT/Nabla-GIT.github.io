@@ -73,6 +73,10 @@ background-color: black;
 
 
 
+
+
+
+
 nav {
   display: flex;
   align-items: center; /* 垂直居中 */
@@ -94,7 +98,6 @@ ul {
   list-style-type: none; /* 去除默认的列表样式 */
   display: flex;
   align-items: center; /* 垂直居中 */
-  justify-content: center; /* 水平居中 */
   /* 可根据需要添加其他样式 */
 }
 
@@ -109,6 +112,12 @@ ul li a {
   font-size: 3vw; /* 设置链接字体大小为视口宽度的2% */
   /* 可根据需要添加其他样式 */
 }
+
+
+
+
+
+
 
 
 
