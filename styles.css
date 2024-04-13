@@ -24,6 +24,7 @@ background-color:black;
         background-size: 100% 100%; /* 图片将会拉伸以填满整个容器，可能会导致变形 */
          background-position: center center; /* 图片位于容器的中心 */
         background-attachment: fixed; /* 将背景图像与页面一起滚动 */
+text-align: center;
 
 }
 
