@@ -24,7 +24,6 @@ background-color:black;
         background-size: 100% 100%; /* 图片将会拉伸以填满整个容器，可能会导致变形 */
          background-position: center center; /* 图片位于容器的中心 */
         background-attachment: fixed; /* 将背景图像与页面一起滚动 */
-text-align: center;
 
 }
 
@@ -53,7 +52,7 @@ background-color: black;
 
 
 
-nav {display: flex;  align-items: center; text-align: center;   color:	#00BFFF;   background-color: rgba(0, 0, 0, 0.4); /* 设置背景颜色为半透明黑色 */    padding: 0.5vw; /* 为导航栏添加内边距 */}
+nav {display: flex;  text-align: center;   color:	#00BFFF;   background-color: rgba(0, 0, 0, 0.4); /* 设置背景颜色为半透明黑色 */    padding: 0.5vw; /* 为导航栏添加内边距 */}
 
 .logo { margin-right: auto; /* 将 logo 推到导航栏的最左边 */}
 .logo img {height: 3vw; /* 设置 logo 图片的高度 */}
