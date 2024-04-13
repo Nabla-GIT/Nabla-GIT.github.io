@@ -110,6 +110,8 @@ ul li a {
   text-decoration: none; /* 去除链接的下划线 */
   color: white; /* 设置链接文字颜色为白色 */
   font-size: 3vw; /* 设置链接字体大小为视口宽度的2% */
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
   /* 可根据需要添加其他样式 */
 }
 
