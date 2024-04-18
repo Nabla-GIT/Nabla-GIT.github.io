@@ -191,8 +191,8 @@ transition: all 0.5s ease;
 
     width: 40%;
 
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 6%;
+    margin-right: 6%;
     background-color: rgba(0, 0,0, 0.4); /* 将背景颜色设置为半透明黑色，alpha 值为 0.5 */
     color:	#00BFFF;
     border-radius: 2.2vw;
