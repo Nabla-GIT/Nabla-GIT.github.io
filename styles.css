@@ -105,7 +105,6 @@ footer{
 
     .container-wrapper {
         display: flex;
-        justify-content: flex-start; /* 左对齐 */
         align-items: center; /* 在交叉轴上居中对齐 */
     width: 100%;
     height: 100%;
