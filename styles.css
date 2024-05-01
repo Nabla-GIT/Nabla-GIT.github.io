@@ -286,6 +286,8 @@ outline: none;
 
     /* 第一个样式 */
     #renderCanvas02 {
+    outline: none;
+
     width: 100%;
     background-color: transparent;
     z-index:10000; 
