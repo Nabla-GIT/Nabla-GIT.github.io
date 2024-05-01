@@ -284,6 +284,22 @@ canvas{
     
 };
 
+
+
+
+.canvas02{ 
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    z-index:10000; 
+    
+};
+
+
+
+
+
+
 h1{
     font-size: 350%;/*父级的300%*/
 
