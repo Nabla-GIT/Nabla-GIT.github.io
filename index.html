@@ -9,7 +9,7 @@
 
 
 
-    <link rel="stylesheet" type="text/css" href="styles.css?v=1.0.33">
+    <link rel="stylesheet" type="text/css" href="styles.css?v=1.0.35">
 
 
 
@@ -298,8 +298,8 @@ event.preventDefault();
         // This creates and positions a free camera (non-mesh)
         var camera02 = new BABYLON.ArcRotateCamera("camera", 0, Math.PI/2, 25, BABYLON.Vector3.Zero(), scene02);
 
-   camera02.lowerBetaLimit=Math.PI/1.8;
-      camera02.upperBetaLimit=Math.PI/1.8;
+   camera02.lowerBetaLimit=Math.PI/1.9;
+      camera02.upperBetaLimit=Math.PI/1.9;
 		
         // This targets the camera to scene origin
         camera02.setTarget(BABYLON.Vector3.Zero());
