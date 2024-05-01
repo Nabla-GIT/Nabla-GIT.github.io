@@ -325,6 +325,7 @@ event.preventDefault();
 
 var mat=new BABYLON.StandardMaterial('',scene02);
 mat.backFaceCulling=false;
+var gl = new BABYLON.GlowLayer("glow", scene02);
 
 
 scene02.registerBeforeRender(automove);
