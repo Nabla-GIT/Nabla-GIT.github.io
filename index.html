@@ -281,7 +281,7 @@ event.preventDefault();
 	
 		
   var width02 = canvas02.offsetWidth;
-  var height02 = width02 * 0.70; // 高度为宽度的两倍
+  var height02 = width02 * 0.3; // 高度为宽度的两倍
   canvas02.width = width02;
   canvas02.height = height02;	
 
@@ -352,8 +352,11 @@ for(let i=0;i<6;i++){
     scene02.meshes[i].position=pos;
     scene02.meshes[i].rotation.x=-Math.PI/2
     scene02.meshes[i].rotation.y=i*jump
-
     scene02.meshes[i].material=mat;
+
+scene02.meshes[i].enableEdgesRendering()
+scene02.meshes[i].edgesColor=new BABYLON.Color4(1,i*0.2,1);
+scene02.meshes[i].edgesWidth=10
 
 
 
