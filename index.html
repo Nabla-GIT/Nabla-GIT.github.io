@@ -9,7 +9,7 @@
 
 
 
-    <link rel="stylesheet" type="text/css" href="styles.css?v=1.0.31">
+    <link rel="stylesheet" type="text/css" href="styles.css?v=1.0.32">
 
 
 
@@ -331,6 +331,7 @@ function automove () {
 time+=scene02.getEngine().getDeltaTime()/10000;
 var strength = Math.abs( Math.sin(time*2)*1.2); 
 mat.emissiveColor=new BABYLON.Color3(0.16*strength, 0.78*strength, 0.73*strength);
+camera02.alpha+=time/10000;
 
 }
 
