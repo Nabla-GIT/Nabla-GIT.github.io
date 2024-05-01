@@ -9,7 +9,7 @@
 
 
 
-    <link rel="stylesheet" type="text/css" href="styles.css?v=1.0.29">
+    <link rel="stylesheet" type="text/css" href="styles.css?v=1.0.30">
 
 
 
@@ -273,11 +273,12 @@
         const canvas02 = document.getElementById("renderCanvas02"); // Get the canvas element
 
 //canvas02
+		
 
-// 监听滚轮事件
 canvas02.addEventListener("wheel", function(event) {
 event.preventDefault();
 });
+	
 		
   var width02 = canvas02.offsetWidth;
   var height02 = width02 * 0.70; // 高度为宽度的两倍
@@ -322,12 +323,12 @@ var mat=new BABYLON.StandardMaterial('',scene02);
 mat.backFaceCulling=false;
 
 
-scene.registerBeforeRender(automove);
+scene02.registerBeforeRender(automove);
 
 var time=0;
 
 function automove () {
-time+=scene.getEngine().getDeltaTime()/10000;
+time+=scene02.getEngine().getDeltaTime()/10000;
 var strength = Math.abs( Math.sin(time*2)*1.2); 
 mat.emissiveColor=new BABYLON.Color3(0.16*strength, 0.78*strength, 0.73*strength);
 
