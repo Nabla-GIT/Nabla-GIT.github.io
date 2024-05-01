@@ -297,6 +297,10 @@ event.preventDefault();
 
         // This creates and positions a free camera (non-mesh)
         var camera02 = new BABYLON.ArcRotateCamera("camera", 0, Math.PI/2, 25, BABYLON.Vector3.Zero(), scene02);
+
+   camera02.lowerBetaLimit=Math.PI/1.8;
+      camera02.upperBetaLimit=Math.PI/1.8;
+		
         // This targets the camera to scene origin
         camera02.setTarget(BABYLON.Vector3.Zero());
 
@@ -307,7 +311,7 @@ event.preventDefault();
         var light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene02);
 
         // Default intensity is 1. Let's dim the light a small amount
-        light.intensity = 0.7;
+        light.intensity = 0;
 
 
 
