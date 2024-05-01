@@ -270,8 +270,10 @@ transition: all 0.5s ease;
 
 
 
-canvas{ 
-    outline: none;
+
+    /* 第一个样式 */
+    #renderCanvas {
+outline: none;
     width: 65%;
     background-color: transparent;
     z-index:10000; 
@@ -280,20 +282,14 @@ canvas{
     position: absolute; /* 将 canvas 绝对定位 */
     top: 0vw; /* 距离容器顶部的距离 */
     right: 0vw; /* 距离容器顶部的距离 */
+    }
 
-    
-};
-
-
-
-
-.canvas02{ 
-    outline: none;
+    /* 第一个样式 */
+    #renderCanvas02 {
     width: 100%;
     background-color: transparent;
     z-index:10000; 
-    
-};
+    }
 
 
 
